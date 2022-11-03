@@ -6,7 +6,30 @@
 
 .footer-container {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  text-align: center;
+  flex-flow: column wrap;
+  gap: 60px;
+  @media screen and (min-width: $tablet) {
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: $desktop) {
+    justify-content: space-between;
+    gap: 0;
+    flex-wrap: nowrap;
+    text-align: left;
+  }
+}
+
+.subscribe__label {
+  width: 100%;
+  @media screen and (min-width: $tablet) {
+    width: 450px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 350px;
+  }
 }
 
 .footer__list-address {
@@ -45,9 +68,9 @@
 }
 
 /* <!-- присоеденяйтесь --> */
-.footer__join {
-  margin-left: 70px;
-}
+// .footer__join {
+//   margin-left: 70px;
+// }
 
 .join {
   margin: 0;
@@ -73,7 +96,10 @@
 
 /* <!-- подписаться --> */
 .footer__subscribe {
-  margin-left: 93px;
+  width: 100%;
+  @media screen and (min-width: $desktop) {
+    width: auto;
+  }
 }
 
 .subscribe__title {
@@ -85,11 +111,19 @@
 
 .subscribe__form {
   display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 20px;
+  @media screen and (min-width: $desktop) {
+    flex-flow: row;
+    justify-content: center;
+    gap: 12px;
+  }
 }
 
 .imput-subscribe {
   height: 50px;
-  width: 358px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: inherit;

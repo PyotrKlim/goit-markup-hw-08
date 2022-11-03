@@ -1,66 +1,73 @@
-body {
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    color: $basic-color;
-    background: $main-color;
-    margin: 0;
+.time-cloz {
+  display: none;
 }
-p, h1, h2, h3 {
-    padding: 0;
-    margin: 0;
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: $basic-color;
+  background: $main-color;
+  margin: 0;
+}
+
+p,
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
 }
 
 ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-img  {
-    display: block;
+img {
+  display: block;
+
+  width: 100%;
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .link:hover,
 .link:focus {
-   color: $accent-color;
+  color: $accent-color;
 
-    .contacts__icon  {
+  .contacts__icon {
     fill: $accent-color;
   }
 }
 
-
-
 .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .capital-letters {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .description {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 1.71;
-    color: $description-color;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.71;
+  color: $description-color;
 }
