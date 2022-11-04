@@ -26,47 +26,86 @@
     <header class="header">
       <div class="container">
         <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__logo">
-              <a class="logo" href="./index.html">
-                <span class="logo__web">Web</span
-                ><span class="logo__studio">Studio</span>
-              </a>
-            </li>
-            <!-- навигация по сайту -->
-            <li class="nav__item">
-              <a class="headar__link link" href="./index.html">Студія</a>
-            </li>
-            <li class="nav__item">
-              <a class="headar__link link current" href="./portfolio.html"
-                >Портфоліо</a
-              >
-            </li>
-            <li class="nav__item">
-              <a class="headar__link link" href="#">Контакти</a>
-            </li>
-          </ul>
-          <ul class="nav__contacts-list contacts-list">
-            <li class="contacts-list__item">
-              <a
-                class="contacts-list__link-icon link"
-                href="mailto:info@devstudio.com"
-              >
-                <svg class="contacts__icon" width="16px" height="12px">
-                  <use href="./images/icons.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="contacts-list__item">
-              <a class="contacts-list__link-icon link" href="tel:+380961111111">
-                <svg class="contacts__icon" width="10px" height="16px">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
+          <a class="nav__logo logo" href="./index.html">
+            <span class="logo__web">Web</span
+            ><span class="logo__studio">Studio</span>
+          </a>
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="headar__link link" href="./index.html">Студія</a>
+              </li>
+              <li class="nav__item">
+                <a class="headar__link link current" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="headar__link link" href="#">Контакти</a>
+              </li>
+            </ul>
+            <div class="nav__contacts-list contacts-list">
+              <div class="contacts-box">
+                <div class="contacts-list__item">
+                  <a
+                    class="contacts-list__link-icon link"
+                    href="mailto:info@devstudio.com"
+                  >
+                    <svg class="contacts__icon" width="16px" height="12px">
+                      <use href="./images/icons.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                </div>
+                <div class="contacts-list__item">
+                  <a
+                    class="contacts-list__link-icon link"
+                    href="tel:+380961111111"
+                  >
+                    <svg class="contacts__icon" width="10px" height="16px">
+                      <use href="./images/icons.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                  </a>
+                </div>
+              </div>
+
+              <ul class="contacts-list__socseti">
+                <li class="contacts-list__socseti-item">
+                  <a class="contacts__socseti" href="">Instagram</a>
+                </li>
+                <li class="contacts-list__socseti-item">
+                  <a class="contacts__socseti" href="">Twitter</a>
+                </li>
+                <li class="contacts-list__socseti-item">
+                  <a class="contacts__socseti" href="">Facebook</a>
+                </li>
+                <li class="contacts-list__socseti-item">
+                  <a class="contacts__socseti" href="">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use
+                class="icon-close"
+                href="./images/icons.svg#icon-close_40px"
+              ></use>
+              <use
+                class="icon-menu"
+                href="./images/icons.svg#icon-menu_40px"
+              ></use>
+            </svg>
+          </button>
+
+          <!-- навигация по сайту и контакты -->
         </nav>
       </div>
     </header>

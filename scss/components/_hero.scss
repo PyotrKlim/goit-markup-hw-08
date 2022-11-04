@@ -15,48 +15,59 @@
 }
 
 .hero {
-  max-height: 1600px;
+  @media screen and (max-width: $tablet-max) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+  max-width: 1600px;
   margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
   background: $hero-footer-section-background;
   text-align: center;
   background-color: $hero-bacrground;
-
+  background-size: cover;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/het-site.jpg");
+
   background-position: center;
   background-repeat: no-repeat;
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url("../images/het-site-2x.jpg");
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/het-site-2x.jpg");
   }
 }
 
 .hero__title {
+  color: $second-basic;
+  font-weight: 900;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-  @media screen and (min-width: $desktop) {
-    width: 696px;
-  }
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (min-width: $tablet) {
     font-size: 26px;
+    max-width: 360px;
     line-height: 1.62;
   }
 
-  color: $second-basic;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  @media screen and (min-width: $desktop) {
+    font-size: 44px;
+    max-width: 696px;
+    line-height: 1.36;
+  }
 }

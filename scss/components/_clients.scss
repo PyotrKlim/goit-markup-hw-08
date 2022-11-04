@@ -9,12 +9,13 @@
 }
 
 .clients__list-sites {
-  @media screen and (min-width: $mobile) {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  // @media screen and (min-width: $mobile) {
+
+  // }
 }
 
 .clients__item {

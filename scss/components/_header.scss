@@ -8,10 +8,11 @@
 .nav {
   display: flex;
   align-items: center;
+  height: 60px;
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (min-width: $tablet) {
     justify-content: space-between;
-    height: 60px;
+    height: 80px;
   }
 }
 /* логотип */
@@ -65,7 +66,7 @@
 }
 
 .menu-container {
-  @media screen and (max-width: $tablet) {
+  @media screen and (min-width: $tablet) {
     &.is-open {
       display: flex;
       background-color: #fff;
@@ -74,15 +75,18 @@
     }
   }
 
-  @media screen and (max-width: $tablet) {
-    display: none;
-
+  @media screen and (max-width: 768px) {
+    background-color: #fff;
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     height: 100vh;
-    padding: 40px;
+    padding: 40px 48px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   @media screen and (min-width: $tablet) {
@@ -96,7 +100,7 @@
 
 /* навигация сайта  */
 .nav__list {
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: 767px) {
     font-size: 40px;
   }
   @media screen and (min-width: $tablet) {
@@ -108,11 +112,12 @@
 }
 
 .nav__item {
-  @media screen and (max-width: $tablet) {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
+  @media screen and (max-width: 767px) {
   }
   @media screen and (min-width: $tablet) {
     margin-right: 50px;
+    margin-bottom: 0;
     display: flex;
     align-items: center;
     height: 80px;
@@ -151,12 +156,17 @@
 }
 
 .contacts-box {
-  @media screen and (max-width: $tablet) {
-    position: relative;
-    height: 100px;
+  position: relative;
+  height: 100px;
+  @media screen and (min-width: 768px) {
+    // position: relative;
+    // height: 100px;
+    height: auto;
   }
   @media screen and (min-width: $desktop) {
     display: flex;
+    position: static;
+    height: auto;
     align-items: center;
     justify-content: center;
     gap: 30px;
@@ -164,12 +174,14 @@
 }
 
 .contacts-list__item {
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: 767px) {
     position: absolute;
     &:last-child {
+      color: $accent-color;
       top: 0;
       left: 0;
       font-size: 34px;
+      width: max-content;
     }
     &:first-child {
       bottom: 0;
@@ -178,9 +190,9 @@
     }
   }
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: 767px) {
     &:last-of-type {
-      color: $accent-color;
+      // color: $accent-color;
     }
 
     &:first-of-type {
@@ -190,13 +202,14 @@
 }
 
 .contacts__icon {
+  display: none;
   margin-right: 10px;
   fill: $description-color;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  @media screen and (max-width: $tablet) {
-    display: none;
+  @media screen and (min-width: $tablet) {
+    display: block;
   }
 }
 
@@ -217,7 +230,7 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: $description-color;
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: 767px) {
     &:last-of-type {
       color: inherit;
     }

@@ -20,7 +20,8 @@
 
 .box-modal {
   @media screen and (max-width: $tablet) {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     height: 690px;
     top: 93px;
   }
@@ -141,10 +142,13 @@
 }
 
 .modal__place-comment {
+  @media screen and (min-width: $desktop) {
+    font-size: 12px;
+  }
   height: 120px;
   width: 100%;
   resize: none;
-  font-size: 16px;
+  font-size: 14px;
   color: $basic-color;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;

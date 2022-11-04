@@ -1,9 +1,10 @@
 .benefits__list {
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  // @media screen and (min-width: $tablet-max) {
+
+  // }
 }
 
 .benefits__item {
