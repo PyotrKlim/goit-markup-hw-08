@@ -181,6 +181,9 @@ img {
   }
 }
 
+.menu-container {
+  display: flex;
+}
 @media screen and (min-width: 768px) {
   .menu-container.is-open {
     display: flex;
@@ -198,7 +201,7 @@ img {
     width: 100%;
     height: 100vh;
     padding: 40px 48px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
   }
