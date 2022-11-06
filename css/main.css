@@ -203,11 +203,6 @@ img {
     justify-content: space-between;
   }
 }
-@media screen and (min-width: 768px) {
-  .menu-container {
-    display: flex;
-  }
-}
 @media screen and (min-width: 1200px) {
   .menu-container {
     justify-content: space-between;
@@ -302,7 +297,7 @@ img {
     color: #2196f3;
     top: 0;
     left: 0;
-    font-size: 34px;
+    font-size: 27px;
     width: max-content;
   }
   .contacts-list__item:first-child {
@@ -358,9 +353,9 @@ img {
 
 .contacts-list__socseti {
   display: flex;
-  justify-content: space-between;
-  width: 356px;
+  width: 100%;
   margin-top: 64px;
+  gap: 8px;
 }
 @media screen and (min-width: 768px) {
   .contacts-list__socseti {
@@ -375,7 +370,7 @@ img {
 
 .contacts__socseti {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
@@ -829,8 +824,17 @@ img {
 }
 
 .box-modal {
-  width: 528px;
-  height: 581px;
+  width: 100%;
+  max-width: 450px;
+  height: 609px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
   top: 0;
   right: 0;
@@ -838,12 +842,11 @@ img {
   left: 0;
   margin: auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .box-modal {
     width: 100%;
-    max-width: 450px;
-    height: 690px;
-    top: 93px;
+    max-width: 528px;
+    height: 581px;
   }
 }
 
@@ -872,31 +875,14 @@ img {
 }
 
 .tatle-modal {
-  position: absolute;
-  top: 40px;
-  left: 40px;
   font-weight: 700;
   font-size: 20px;
   text-align: center;
   letter-spacing: 0.03em;
   margin: 0;
-  z-index: 1;
+  margin-bottom: 12px;
 }
 
-.modal {
-  height: 581px;
-  background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding-top: 75px;
-  padding-right: 40px;
-  padding-bottom: 40px;
-  padding-left: 40px;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 .modal__place {
   display: block;
   margin-bottom: 10px;
@@ -977,7 +963,6 @@ img {
 .label-check {
   display: inline-flex;
   align-items: center;
-  /* margin-bottom: 30px; */
 }
 
 .checkbox {

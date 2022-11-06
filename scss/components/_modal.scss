@@ -19,14 +19,26 @@
 }
 
 .box-modal {
-  @media screen and (max-width: $tablet) {
+  width: 100%;
+  max-width: 450px;
+  height: 609px;
+
+  background-color: $main-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px;
+
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: $tablet) {
     width: 100%;
-    max-width: 450px;
-    height: 690px;
-    top: 93px;
+    max-width: 528px;
+    height: 581px;
   }
-  width: 528px;
-  height: 581px;
+
   position: absolute;
   top: 0;
   right: 0;
@@ -61,32 +73,15 @@
 }
 
 .tatle-modal {
-  position: absolute;
-  top: 40px;
-  left: 40px;
   font-weight: 700;
   font-size: 20px;
   text-align: center;
   letter-spacing: 0.03em;
   margin: 0;
-  z-index: 1;
+  margin-bottom: 12px;
 }
 
 .modal {
-  height: 581px;
-  background-color: $main-color;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding-top: 75px;
-  padding-right: 40px;
-  padding-bottom: 40px;
-  padding-left: 40px;
-
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &__place {
     display: block;
     margin-bottom: 10px;
@@ -170,7 +165,6 @@
 .label-check {
   display: inline-flex;
   align-items: center;
-  /* margin-bottom: 30px; */
 }
 
 .checkbox {

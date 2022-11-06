@@ -89,9 +89,6 @@
     justify-content: space-between;
   }
 
-  @media screen and (min-width: $tablet) {
-    display: flex;
-  }
   @media screen and (min-width: $desktop) {
     justify-content: space-between;
     width: 100%;
@@ -180,7 +177,7 @@
       color: $accent-color;
       top: 0;
       left: 0;
-      font-size: 34px;
+      font-size: 27px;
       width: max-content;
     }
     &:first-child {
@@ -242,9 +239,10 @@
     display: none;
   }
   display: flex;
-  justify-content: space-between;
-  width: 356px;
+  // justify-content: space-between;
+  width: 100%;
   margin-top: 64px;
+  gap: 8px;
 }
 
 .contacts-list__socseti-item:nth-child(n + 2) {
@@ -254,7 +252,7 @@
 
 .contacts__socseti {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
