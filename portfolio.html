@@ -148,12 +148,38 @@
             <li class="portfolio__card-item">
               <a class="portfolio__card-link link" href="">
                 <div class="portfolio__card-box-img">
-                  <img
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/three-persons.jpg    1x,
+                        ./images/three-persons-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/three-persons-T.jpg    1x,
+                        ./images/tablet/three-persons-T-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/mobile/three-persons-M.jpg    1x,
+                        ./images/mobile/three-persons-M-2x.jpg 2x
+                      "
+                      src="./images/three-persons.jpg"
+                      alt="вебсайт на екрані ноутбука"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+                  <!-- <img
                     src="./images/three-persons.jpg"
                     alt="вебсайт на екрані ноутбука"
                     width="370"
                     height="294"
-                  />
+                  /> -->
                   <div class="portfolio__card-paragraph-hidden">
                     <p class="card-paragraph-hidden">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -467,5 +493,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

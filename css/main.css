@@ -192,7 +192,7 @@ img {
     justify-content: space-between;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .menu-container {
     background-color: #fff;
     position: fixed;
@@ -1067,6 +1067,10 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.portfolio__card-item {
+  width: 450px;
 }
 
 .portfolio__cards-text {
